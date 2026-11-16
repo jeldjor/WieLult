@@ -45,3 +45,15 @@
 .qr-wrap{display:inline-flex;padding:8px;background:white;border-radius:16px;max-width:100%}
 .qr-wrap svg{width:min(184px,48vw);height:auto;aspect-ratio:1}
 .invite-panel .secondary{width:100%;max-width:360px}
+
+/* Compact lobby with collapsed host settings and a private reveal card */
+.lobby-settings{margin:12px 0 16px;padding:12px 14px;border:1px solid #77568c;border-radius:16px;background:#241135}
+.lobby-settings summary{display:flex;align-items:center;gap:10px;cursor:pointer;font-weight:800;list-style:none}
+.lobby-settings summary::-webkit-details-marker{display:none}
+.lobby-settings[open] summary{margin-bottom:18px}
+.lobby-settings label{display:block;margin:10px 0}
+.lobby-settings select:disabled,.lobby-settings input:disabled{opacity:.72}
+.reveal-panel{display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px}
+.secret-card{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;width:100%;min-height:min(38dvh,280px);padding:20px;border:2px solid #ffc24b;border-radius:24px;background:linear-gradient(145deg,#3d195a,#180d29);color:#fff;touch-action:none;user-select:none;-webkit-user-select:none;text-align:center;font-size:clamp(20px,5vw,34px);font-weight:900}
+.secret-card small{font-size:15px;color:#ffd56e}
+@media(max-height:650px){.reveal-panel{gap:7px}.secret-card{min-height:28dvh}}
