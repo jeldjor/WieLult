@@ -9,7 +9,7 @@ const rules=[
 ["Word De Gouden Lul","Gewone spelers krijgen bij een succesvolle meerderheid én hun eigen goede stem 1 punt. De Lul krijgt 1 extra punt als hij niet is ontmaskerd."]
 ];
 const categories=["Alles door elkaar","Eten & drinken","Sport","Dieren","Plaatsen","Films & series","Beroepen","Ondeugend"];
-function Mascot(){return <div className="mascot-scene"><img className="mascot-image" src={`${import.meta.env.BASE_URL}WieLult_mascotte.webp`} alt="WieLult aubergine-detective met hoed en vergrootglas" loading="eager"/></div>}
+function Mascot(){return <div className="mascot-scene"><img className="mascot-image" src="https://raw.githubusercontent.com/jeldjor/WieLult/main/WieLult_mascotte.webp" alt="WieLult aubergine-detective met hoed en vergrootglas" loading="eager"/></div>}
 export default function App(){
 const [screen,setScreen]=useState("home"),[name,setName]=useState(localStorage.getItem("wl-name")||""),[code,setCode]=useState(""),[room,setRoom]=useState(""),[players,setPlayers]=useState([]),[host,setHost]=useState(false),[settings,setSettings]=useState({points:7,rounds:2,hints:true,hintLevel:3,voteTime:60,category:"Alles door elkaar"}),[rule,setRule]=useState(0),[copied,setCopied]=useState(false);
 function go(s){setScreen(s);window.scrollTo(0,0)}
