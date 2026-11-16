@@ -39,3 +39,9 @@
 .home .actions .primary,.home .actions .secondary{min-height:0;height:clamp(37px,6.7dvh,56px);font-size:clamp(12px,1.9dvh,16px);border-radius:clamp(10px,2dvh,17px)}
 @media(max-height:600px){.shell:has(> .home) > header{height:38px}.home{gap:2px}.home .spark{font-size:9px}.home h1{font-size:clamp(30px,7dvh,43px)}.home .headline{font-size:14px}.home .tagline{font-size:11px}.home .actions{gap:4px;margin-top:2px}.home .actions .primary,.home .actions .secondary{height:35px}}
 @media(orientation:landscape) and (max-height:520px){.shell:has(> .home){max-width:760px}.home{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto auto auto 1fr;column-gap:20px;align-items:center}.home .spark{grid-column:2;grid-row:1}.home .mascot-scene{grid-column:1;grid-row:1 / 5;height:100%;max-height:100%;max-width:100%}.home h1{grid-column:2;grid-row:2}.home .headline{grid-column:2;grid-row:3}.home .tagline{grid-column:2;grid-row:4;align-self:start}.home .actions{grid-column:2;grid-row:4;align-self:end}}
+
+/* Room invite QR: compact and readable on every phone */
+.invite-panel{display:flex;flex-direction:column;align-items:center;gap:10px;margin:12px 0 20px;text-align:center}
+.qr-wrap{display:inline-flex;padding:8px;background:white;border-radius:16px;max-width:100%}
+.qr-wrap svg{width:min(184px,48vw);height:auto;aspect-ratio:1}
+.invite-panel .secondary{width:100%;max-width:360px}
