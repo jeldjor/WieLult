@@ -18,3 +18,9 @@
 .mascot-scene{height:auto;min-height:0;margin:12px auto 8px;display:block;overflow:hidden;border-radius:24px;background:#1b0e2c}
 .mascot-image{display:block;width:100%;height:auto;max-height:310px;object-fit:cover;object-position:center 42%;border-radius:24px}
 @media(max-width:380px){.mascot-scene{height:auto;min-height:0}.mascot-image{max-height:265px}}
+
+/* Transparent full-body mascot: no card, no crop */
+.mascot-scene{height:auto;min-height:0;max-width:330px;margin:8px auto 4px;overflow:visible;border-radius:0;background:transparent;box-shadow:none}
+.mascot-image{display:block;width:100%;height:auto;max-height:300px;object-fit:contain;object-position:center;border-radius:0;background:transparent}
+.home{padding-top:18px}.home h1{margin:4px 0 12px}.actions{margin-top:20px}
+@media(max-width:380px){.mascot-scene{height:auto;min-height:0;max-width:275px}.mascot-image{max-height:245px}}
