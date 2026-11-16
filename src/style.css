@@ -57,3 +57,20 @@
 .secret-card{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;width:100%;min-height:min(38dvh,280px);padding:20px;border:2px solid #ffc24b;border-radius:24px;background:linear-gradient(145deg,#3d195a,#180d29);color:#fff;touch-action:none;user-select:none;-webkit-user-select:none;text-align:center;font-size:clamp(20px,5vw,34px);font-weight:900}
 .secret-card small{font-size:15px;color:#ffd56e}
 @media(max-height:650px){.reveal-panel{gap:7px}.secret-card{min-height:28dvh}}
+
+/* Swipe-to-peel role reveal; fits one screen and shows large secret text */
+.shell:has(.reveal-panel){height:100dvh;min-height:0;overflow:hidden;display:flex;flex-direction:column}
+.shell:has(.reveal-panel)>header{flex:0 0 auto}
+.reveal-panel{flex:1;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:space-around;gap:clamp(3px,1dvh,10px);padding:clamp(10px,2dvh,20px);text-align:center;overflow:hidden}
+.reveal-panel h2{font-size:clamp(22px,4dvh,36px);line-height:1.1;margin:0}
+.reveal-panel p{margin:0;font-size:clamp(12px,1.8dvh,16px)}
+.reveal-panel .primary{flex:0 0 auto;width:100%;min-height:44px}
+.peel-area{position:relative;flex:1 1 auto;min-height:155px;max-height:390px;width:100%;border:2px solid #ffca55;border-radius:24px;overflow:hidden;touch-action:none;user-select:none;-webkit-user-select:none;background:#211032}
+.peel-secret{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(10px,2dvh,20px);padding:14px;background:radial-gradient(circle,#502169,#1d0e2d);color:white}
+.peel-secret .secret-label{font-size:clamp(12px,2dvh,17px);letter-spacing:.16em;color:#ffc85c;font-weight:800}
+.peel-secret strong{font-size:clamp(35px,9vw,64px);line-height:1.05;overflow-wrap:anywhere;text-shadow:0 2px 20px #9b54ce}
+.peel-secret small{font-size:clamp(13px,2dvh,18px);font-weight:700}
+.peel-cover{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 45%,#48205d,#1b0c2c);pointer-events:none}
+.peel-cover img{min-height:0;max-height:80%;max-width:85%;object-fit:contain}
+.peel-cover span{color:#ffcc61;font-size:clamp(11px,1.8dvh,15px);font-weight:900;letter-spacing:.06em;padding:8px}
+@media(max-height:600px){.reveal-panel{gap:3px}.peel-area{min-height:110px}.reveal-panel .primary{min-height:38px}}
