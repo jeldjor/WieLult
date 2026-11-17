@@ -74,3 +74,20 @@
 .peel-cover img{min-height:0;max-height:80%;max-width:85%;object-fit:contain}
 .peel-cover span{color:#ffcc61;font-size:clamp(11px,1.8dvh,15px);font-weight:900;letter-spacing:.06em;padding:8px}
 @media(max-height:600px){.reveal-panel{gap:3px}.peel-area{min-height:110px}.reveal-panel .primary{min-height:38px}}
+
+/* True bottom-to-top eggplant peel. Skin is clipped while pale flesh is exposed. */
+.eggplant-swipe{position:relative;flex:1 1 auto;min-height:155px;max-height:380px;width:100%;display:grid;place-items:center;touch-action:none;user-select:none;-webkit-user-select:none;overflow:hidden;border-radius:22px;background:radial-gradient(ellipse at center,#3b1959 0%,#1b0c2c 75%);border:1px solid #76518e}
+.eggplant-svg{position:relative;z-index:2;display:block;width:auto;height:100%;max-width:100%;max-height:100%;filter:drop-shadow(0 9px 13px #09031399);pointer-events:none}
+.eggplant-secret{position:absolute;z-index:3;left:50%;top:62%;transform:translate(-50%,-50%);width:72%;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;pointer-events:none;color:#271334;text-shadow:0 1px 1px #fff8}
+.eggplant-secret span{font-size:clamp(9px,1.7dvh,13px);letter-spacing:.12em;font-weight:900}
+.eggplant-secret strong{font-size:clamp(26px,6.5vw,42px);line-height:1.02;overflow-wrap:anywhere;font-weight:900}
+.eggplant-secret small{font-size:clamp(10px,1.7dvh,14px);font-weight:800}
+.eggplant-swipe-tip{position:absolute;z-index:4;bottom:8px;left:0;right:0;text-align:center;color:#ffcf67;font-weight:900;font-size:12px;letter-spacing:.09em;pointer-events:none;text-shadow:0 2px 5px #000}
+.turn-current{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;min-height:150px;width:100%;background:linear-gradient(135deg,#4d1a6b,#26113d);border:1px solid #a46abe;border-radius:20px}
+.turn-current span{font-size:12px;color:#ffc950;letter-spacing:.12em;font-weight:900}
+.turn-current strong{font-size:clamp(30px,8vw,48px)}
+.turn-current small{font-size:13px;color:#d9c6e6}
+.turn-order{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;max-height:25dvh;overflow:auto}
+.turn-order span{border:1px solid #75518a;padding:6px 10px;border-radius:20px;font-size:12px}
+.turn-order span.done{opacity:.5;text-decoration:line-through}
+.turn-order span.active{border-color:#ffc950;color:#ffc950}
